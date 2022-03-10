@@ -1,4 +1,11 @@
-# Instructions for generating proceedings in aclpub2 format
+# How to generate proceedings for ACL Conferences and Workshops in aclpub2 format
+
+This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format.
+
+## Should I read this guide?
+- YES if you are using OpenReview as reviewing platform. We will explain how to generate the proceedings automatically from OpenReview.
+- YES if you are using EasyChair as reviewing platform. We will explain how to generate the proceedings manually.
+- NO, if your workshop is using SoftConf as reviewing platform. In this case, please follow the [ACLPUB instructions](https://github.com/acl-org/acl-pub/blob/gh-pages/aclpub-start.md).
 
 ## Setup
 
