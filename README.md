@@ -3,25 +3,29 @@
 This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format.
 
 ## Which reviewing platform is you conference/workshop using?
-- OpenReview. This guide is for you, we will explain you how to generate the proceedings automatically from OpenReview.
+- OpenReview. This guide is for you, we will explain you how to use the provided tool to generate the proceedings automatically from OpenReview.
 - EasyChair. We will explain you how to generate the proceedings manually.
 - SoftConf. Please follow the [ACLPUB instructions](https://github.com/acl-org/acl-pub/blob/gh-pages/aclpub-start.md).
 
-## Setup
+## Proceedings format and structure
 
-### Install python dependencies.
+
+## How to test the tool to generate your proceedings
+Now that you know the expected structure of the proceedings and... you can proceed testing the tool to automatically generate the proceedings. First of all, follow the Setup procedures. You can then test...
+
+### Setup: Install python dependencies.
 
 ```
 python -m pip install -r requirements.txt
 ```
 
-### Install Java
+### Setup: Install Java
 
 Java is required to use the [pax](https://ctan.org/pkg/pax?lang=en) latex library,
 which is responsible for extracting and reinserting PDF links.
 Visit the [Java website](https://www.java.com/) for instructions on how to install.
 
-### Install `pdflatex` and associated dependencies.
+### Setup: Install `pdflatex` and associated dependencies.
 
 #### Ubuntu/Debian
 
