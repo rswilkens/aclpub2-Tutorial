@@ -1,5 +1,4 @@
-# aclpub2-Tutorial
-# aclpub2
+# Instructions for generating proceedings in aclpub2 format
 
 ## Setup
 
