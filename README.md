@@ -38,7 +38,7 @@ The following `.yml` files should be provided to the generation scripts. Files 1
 
 In addition, for the handbook, a file `program.yml` should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
 
-## Expected output (to be sent to ACL Anthology)
+## Expected output
 The generated proceedings should be sent to the ACL Anthology as a `.zip` file containing a repository named with the conference/workshop acronym. Such repository should contain:
 1. A repository named INPUT containing all the input files (`.yml`)
 2. A repository named WATERMARKED containing all the pdfs of the watermarked camera ready papers 
