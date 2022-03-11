@@ -8,37 +8,34 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
 - EasyChair (or another reviewing platform). This guide is for you, we will explain you how to generate the proceedings starting from manually edited files.
 
 ## Table of Contents
-1. [Proceedings format and structure](#Proceedings-format-and-structure)
+1. [Proceedings input format and structure](#Proceedings-input-format-and-structure)
 
-2. [How to test the tool to generate your proceedings](#How-to-test-the-tool-to-generate-your-proceedings)
+2. [Manually editing input yml files](#Manually-editing-input-yml-files)
 
-3. [Instructions](#instructions)
+3. [How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview)
 
-   [Step 1:  Generate Tab (Initial Generation)](#step-1-generate-tab)
-
-   [Step 2:  Margins Tab](#step-2--margins-tab)
-
-   [Step 3:  Dwnl Templates Tab](#step-3--dwnl-templates-tab)
+4. [How to test the tool to generate your proceedings](#How-to-test-the-tool-to-generate-your-proceedings)
 
 
 ## Proceedings input format and structure
 The scripts to generate the proceedings accept as input a set of `.yml` files and directories. A YML file is a text document that contains data formatted using YAML (YAML Ain't Markup Language), a human-readable data format used for data serialization. You can open a YML file in any text editor (or source code editor).
 Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/file/yaml-arrays/).
 
-The following `.yml` files should be provided to the generation scripts. Files from 1 to 3 should be manually edited with information concerning your conference/workshops, while files from 4 to 6 can be automatically exported from OpenReview (or manyally edited if you are not using OpenReview).
+The following `.yml` files should be provided to the generation scripts. Files 1,2, 3 and 6 should be manually edited with information concerning your conference/workshops, while files from 4, 5 and 7 can be automatically exported from OpenReview (or manyally edited if you are not using OpenReview).
 
 1. conference_details.yml
 2. sponsors.yml
 3. prefaces.yml
 4. organizing_committee.yml
 5. program_committee.yml
-6. papers.yml
+6. invited_talks.yml
+7. papers.yml
 
 In addition, for the handbook, a file program.yml should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
 
 
 
-## Manually editing input `.yml` files
+## Manually editing yml input files
 Below you can find instructions (and examples) on how you should edit the `.yml` files with information on your conference/workshop.
 
 #### conference_details.yml
@@ -75,7 +72,7 @@ Instead, they should only contain the contents between the `\begin{document}` an
 Frequently, this will simply be plaintext, with a few formulas, figures, or tables.
 
 #### organizing_committee.yml
-This file should list the members of organizaing committee. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
+This file should list the members of the organizaing committee. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
 
 ```yaml
 - role: Name of role, e.g. General Chair
@@ -85,7 +82,7 @@ This file should list the members of organizaing committee. You can edit this fi
 ```
 
 #### program_committee.yml
-This file should list the members of program committee.
+This file should list the members of the program committee. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
 
 ```yaml
 - role: Name of role, e.g. General Chair
@@ -114,7 +111,7 @@ and only what is usually found between the `\begin{document}` and `\end{document
 #### papers.yml
 
 This file should list the accepted papers, along with a directory (named papers/) containing the associated PDFs.
-The listed papers much each have a unique ID so that they may be referred to by ID within the `program.yml` file later on.
+The listed papers much each have a unique ID so that they may be referred to by ID within the `program.yml` file later on. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
 
 
 ```yaml
@@ -149,7 +146,7 @@ The listed papers much each have a unique ID so that they may be referred to by 
   abstract: Abstract of the paper, usually a LaTeX fragment.
 ```
 
-## How to export yml files from OpenReview.
+## How to export yml files from OpenReview
 TBC (Rodrigo)
 
 ## How to test the tool to generate your proceedings
