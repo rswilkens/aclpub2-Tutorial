@@ -2,10 +2,12 @@
 
 This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format. 
 
+
+## Before starting
+### Which are the expected input/output?
 The provided Python tool to generate the proceedings takes as input a set of files containing all information on the event (in the `.yml` format) and generates a `.tex` file containing the conference details, sponsors, prefaces, organizing and program committees, as well as the concatenation of all the watermarked accepted papers and the author index. Such `.tex` file is then compiled to generate the `pdf` file of the proceedings (to be sent to ACL Anthology).
 
-
-## Before starting: Which reviewing platform is you conference/workshop using?
+###  Which reviewing platform is you conference/workshop using?
 - OpenReview. This guide is for you, we will explain you how to use the provided tool to generate the proceedings (and the handbook) automatically from OpenReview. 
 - SoftConf. Please follow the [ACLPUB instructions](https://github.com/acl-org/acl-pub/blob/gh-pages/aclpub-start.md).
 - EasyChair (or another reviewing platform). This guide is for you, we will explain you how to generate the proceedings starting from manually edited files.
