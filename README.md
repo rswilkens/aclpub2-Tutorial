@@ -25,13 +25,14 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
 The scripts to generate the proceedings accept as input a set of `.yml` files and directories. A YML file is a text document that contains data formatted using YAML (YAML Ain't Markup Language), a human-readable data format used for data serialization. You can open a YML file in any text editor (or source code editor).
 Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/file/yaml-arrays/)
 
+The following `.yml` files should be provided to the generation scripts. Files from 1 to 5 should be manually edited with information concerning your conference/workshops, while the last one, `papers.yml` can be automatically extracted from OpenReview.
 
-conference_details.yml
-sponsors.yml
-prefaces.yml
-organizing_committee.yml
-program_committee.yml
-papers.yml
+1. conference_details.yml
+2. sponsors.yml
+3. prefaces.yml
+4. organizing_committee.yml
+5. program_committee.yml
+6. papers.yml
 
 In addition, for the handbook, a file program.yml should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
 
