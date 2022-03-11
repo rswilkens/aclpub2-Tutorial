@@ -28,7 +28,7 @@ The following `.yml` files should be provided to the generation scripts. Files 1
 3. `prefaces.yml`
 4. `organizing_committee.yml`
 5. `program_committee.yml`
-6. `invited_talks.yml`
+6. `invited_talks.yml` (optional)
 7. `papers.yml`
 
 In addition, for the handbook, a file `program.yml` should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
@@ -96,7 +96,7 @@ This file should list the members of the program committee. You can edit this fi
 ```
 
 #### invited_talks.yml
-This file should list the invited talks and associated abstracts and bios. A directory containing the `.tex` files that provide the text of the abstract and the bios should be created in the same directory of the `.yml` files (named invited_talks/).
+This optional file should list the invited talks and associated abstracts and bios. A directory containing the `.tex` files that provide the text of the abstract and the bios should be created in the same directory of the `.yml` files (named invited_talks/).
 As with the prefaces, the contents of the `.tex` files should not include usual headers and footers found within LaTeX files,
 and only what is usually found between the `\begin{document}` and `\end{document}` directives.
 
