@@ -27,7 +27,7 @@ Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/f
 
 The following `.yml` files should be provided to the generation scripts. Files from 1 to 5 should be manually edited with information concerning your conference/workshops, while the last one, `papers.yml` can be automatically extracted from OpenReview.
 
-1. conference_details.yml
+1. [conference_details.yml](#conference_details.yml)
 2. sponsors.yml
 3. prefaces.yml
 4. organizing_committee.yml
@@ -38,7 +38,7 @@ In addition, for the handbook, a file program.yml should be created [Jump to Han
 
 
 
-### Input Format
+### Manually editing input `.yml` files
 
 #### conference_details.yml
 
