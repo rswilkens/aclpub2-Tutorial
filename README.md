@@ -13,11 +13,13 @@ The provided Python tool to generate the proceedings takes as input a set of fil
 ## Table of Contents
 1. [Proceedings input format and structure](#Proceedings-input-format-and-structure)
 
-2. [Manually editing yml input files](#Manually-editing-yml-input-files)
+2. [Expected output](#Expected-output)
 
-3. [How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview)
+3. [Manually editing yml input files](#Manually-editing-yml-input-files)
 
-4. [Testing the tool to generate your proceedings](#Testing-the-tool-to-generate-your-proceedings)
+4. [How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview)
+
+5. [Testing the tool to generate your proceedings](#Testing-the-tool-to-generate-your-proceedings)
 
 
 ## Proceedings input format and structure
