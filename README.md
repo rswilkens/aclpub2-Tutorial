@@ -7,6 +7,20 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
 - EasyChair. We will explain you how to generate the proceedings manually.
 - SoftConf. Please follow the [ACLPUB instructions](https://github.com/acl-org/acl-pub/blob/gh-pages/aclpub-start.md).
 
+## Table of Contents
+1. [Proceedings format and structure](#Proceedings-format-and-structure)
+
+2. [How to test the tool to generate your proceedings](#How-to-test-the-tool-to-generate-your-proceedings)
+
+3. [Instructions](#instructions)
+
+   [Step 1:  Generate Tab (Initial Generation)](#step-1-generate-tab)
+
+   [Step 2:  Margins Tab](#step-2--margins-tab)
+
+   [Step 3:  Dwnl Templates Tab](#step-3--dwnl-templates-tab)
+
+
 ## Proceedings format and structure
 
 
