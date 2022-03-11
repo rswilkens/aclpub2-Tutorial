@@ -4,8 +4,8 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
 
 ## Before starting: Which reviewing platform is you conference/workshop using?
 - OpenReview. This guide is for you, we will explain you how to use the provided tool to generate the proceedings (and the handbook) automatically from OpenReview. 
-- EasyChair. We will explain you how to generate the proceedings manually.
 - SoftConf. Please follow the [ACLPUB instructions](https://github.com/acl-org/acl-pub/blob/gh-pages/aclpub-start.md).
+- EasyChair (or another reviewing platform). This guide is for you, we will explain you how to generate the proceedings starting from manually edited files.
 
 ## Table of Contents
 1. [Proceedings format and structure](#Proceedings-format-and-structure)
@@ -25,9 +25,9 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
 The scripts to generate the proceedings accept as input a set of `.yml` files and directories. A YML file is a text document that contains data formatted using YAML (YAML Ain't Markup Language), a human-readable data format used for data serialization. You can open a YML file in any text editor (or source code editor).
 Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/file/yaml-arrays/).
 
-The following `.yml` files should be provided to the generation scripts. Files from 1 to 5 should be manually edited with information concerning your conference/workshops, while the last one, `papers.yml` can be automatically extracted from OpenReview.
+The following `.yml` files should be provided to the generation scripts. Files from 1 to 3 should be manually edited with information concerning your conference/workshops, while files from 4 to 6 can be automatically exported from OpenReview (or manyally edited if you are not using OpenReview).
 
-1. [conference_details.yml](#conference_details.yml)
+1. conference_details.yml
 2. sponsors.yml
 3. prefaces.yml
 4. organizing_committee.yml
@@ -38,11 +38,11 @@ In addition, for the handbook, a file program.yml should be created [Jump to Han
 
 
 
-### Manually editing input `.yml` files
+## Manually editing input `.yml` files
+Below you can find instructions (and examples) on how you should edit the `.yml` files with information on your conference/workshop.
 
 #### conference_details.yml
-
-List key information about the conference that builds the cover, watermarks, and other items.
+This file should contain the key information about the conference, as its name, abbreviation and so on. It is used to build the cover of the proceedings, watermarks, and other items.
 
 ```yaml
 name: Name of the Conference
@@ -53,9 +53,8 @@ end_date: Conference end date YYYY-MM-dd
 isbn: ISBN number of the proceeding.
 ```
 
-#### sponsors.yml + sponsor_logos/
-
-List of sponsor tiers along with a directory containing the related logos.
+#### sponsors.yml
+This file should list the sponsors (if any). A directory containing the related logos should be created in the same directory of the `.yml` files (named sponsor_logos/).
 
 ```yaml
 - tier: Name of the tier, e.g. Diamond Level or In Collaboration With
@@ -63,9 +62,8 @@ List of sponsor tiers along with a directory containing the related logos.
     - Path to a logo file relative to the sponsor_logos/ directory, e.g. facebook.png
 ```
 
-#### prefaces.yml + prefaces/
-
-List of prefaces along with a directory containing `.tex` files that provide the text of the prefaces.
+#### prefaces.yml
+This file should list the prefaces that will be included in the proceedings. A directory containing the `.tex` files that provide the text of the prefaces should be created in the same directory of the `.yml` files (named prefaces/).
 
 ```yaml
 - title: Title of the preface, e.g. "Preface by the General Chair"
@@ -77,8 +75,7 @@ Instead, they should only contain the contents between the `\begin{document}` an
 Frequently, this will simply be plaintext, with a few formulas, figures, or tables.
 
 #### organizing_committee.yml
-
-Lists the members of organizaing committee.
+This file should list the members of organizaing committee. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
 
 ```yaml
 - role: Name of role, e.g. General Chair
@@ -88,8 +85,7 @@ Lists the members of organizaing committee.
 ```
 
 #### program_committee.yml
-
-Lists the members of program committee.
+This file should list the members of program committee.
 
 ```yaml
 - role: Name of role, e.g. General Chair
@@ -102,9 +98,8 @@ Lists the members of program committee.
     - Committee Member Name
 ```
 
-#### invited_talks.yml + invited_talks/
-
-List of invited talks and associated abstracts and bios.
+#### invited_talks.yml
+This file should list the invited talks and associated abstracts and bios. A directory containing the `.tex` files that provide the text of the abstract and the bios should be created in the same directory of the `.yml` files (named invited_talks/).
 As with the prefaces, the contents of the `.tex` files should not include usual headers and footers found within LaTeX files,
 and only what is usually found between the `\begin{document}` and `\end{document}` directives.
 
@@ -116,10 +111,11 @@ and only what is usually found between the `\begin{document}` and `\end{document
   bio_file: Path to bio LaTeX file relative to the invited_talks/ directory.
 ```
 
-#### papers.yml + papers/
+#### papers.yml
 
-Lists the accepted papers, along with a directory containing the associated PDFs.
+This file should list the accepted papers, along with a directory (named papers/) containing the associated PDFs.
 The listed papers much each have a unique ID so that they may be referred to by ID within the `program.yml` file later on.
+
 
 ```yaml
 - id: Unique ID for the paper.
@@ -152,6 +148,9 @@ The listed papers much each have a unique ID so that they may be referred to by 
   title: Title of the paper.
   abstract: Abstract of the paper, usually a LaTeX fragment.
 ```
+
+## How to export yml files from OpenReview.
+TBC (Rodrigo)
 
 ## How to test the tool to generate your proceedings
 Now that you know the expected structure of the proceedings and... you can proceed testing the tool to automatically generate the proceedings. First of all, follow the Setup procedures. You can then test...
@@ -242,7 +241,7 @@ The purpose of this file are to set up the Jinja environment with LaTeX-like blo
 In addition, it is also responsible for configuring some convenience functions that allow us to create some LaTeX structures in the final output `.tex` file that are easier to write in native Python than either the Jinja base syntax, or LaTeX alone.
 
 ## Handbook generation instructions
-TBC
+TBC (Marco)
 
 #### program.yml
 
