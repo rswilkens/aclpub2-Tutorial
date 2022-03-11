@@ -1,6 +1,7 @@
 # How to generate proceedings for ACL Conferences and Workshops in aclpub2 format
 
-This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format.
+This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format. The provided Python tool to generate the proceedings takes as input a set of files containing all information on the event (in the `.yml` format) and generates a `.tex` file containing the conference details, sponsors, prefaces, organizing and program committees, as well as the concatenation of all the accepted papers in `pdf` format (watermarked) and the author index.
+
 
 ## Before starting: Which reviewing platform is you conference/workshop using?
 - OpenReview. This guide is for you, we will explain you how to use the provided tool to generate the proceedings (and the handbook) automatically from OpenReview. 
@@ -33,7 +34,14 @@ The following `.yml` files should be provided to the generation scripts. Files 1
 
 In addition, for the handbook, a file `program.yml` should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
 
+## Expected output (to be sent to ACL Anthology)
+The generated proceedings should be sent to the ACL Anthology as a `.zip` file containing a repository named with the conference/workshop acronym. Such repository should contain:
+1. A repository named INPUT containing all the input files (`.yml`)
+2. A repository named WATERMARKED containing all the pdfs of the watermarked camera ready papers 
+3. A repository named PROCEEDINGS containing the pdf with the conference/workshop proceedings 
 
+
+Before submitting the final proceedings, please carefully check the generated pdf with the ACLPUBCHECK tool, a Python tool that automatically detects author formatting errors, margin violations as well as many other common formatting errors in papers that are using the LaTeX sty file associated with ACL venues. The tool and instructions to use it can be found [here](https://github.com/acl-org/aclpubcheck).
 
 ## Manually editing yml input files
 Below you can find instructions (and examples) on how you should edit the `.yml` files with information on your conference/workshop.
