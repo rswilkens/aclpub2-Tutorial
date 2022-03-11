@@ -33,7 +33,7 @@ organizing_committee.yml
 program_committee.yml
 papers.yml
 
-In addition, for the handbook, a file program.yml should be created [Jump to Handbook generation instructions](#Handbook-generation). 
+In addition, for the handbook, a file program.yml should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
 
 
 ## How to test the tool to generate your proceedings
