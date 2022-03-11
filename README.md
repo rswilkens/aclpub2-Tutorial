@@ -14,7 +14,7 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
 
 3. [How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview)
 
-4. [How to test the tool to generate your proceedings](#How-to-test-the-tool-to-generate-your-proceedings)
+4. [Testing the tool to generate your proceedings](#Testing-the-tool-to-generate-your-proceedings)
 
 
 ## Proceedings input format and structure
@@ -149,7 +149,7 @@ Each of the listed papers must have a unique ID so that they may be referred to 
 ## How to export yml files from OpenReview
 TBC (Rodrigo)
 
-## How to test the tool to generate your proceedings
+## Testing the tool to generate your proceedings
 Now that you know the expected structure of the proceedings and you know how to edit/export the required `.yml` input files, you are ready to test the tool to automatically generate the proceedings. First of all, follow the Setup procedures. 
 
 Then, as a training example, we made at your disposal in the examples/sigdial repository all the files you would need to correctly generate the proceedings. 
