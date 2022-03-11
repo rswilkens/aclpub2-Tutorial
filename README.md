@@ -111,7 +111,7 @@ and only what is usually found between the `\begin{document}` and `\end{document
 #### papers.yml
 
 This file should list the accepted papers, along with a directory (named papers/) containing the associated PDFs.
-The listed papers much each have a unique ID so that they may be referred to by ID within the `program.yml` file later on. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
+Each of the listed papers must have a unique ID so that they may be referred to by ID within the `program.yml` file later on. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
 
 
 ```yaml
@@ -150,7 +150,10 @@ The listed papers much each have a unique ID so that they may be referred to by 
 TBC (Rodrigo)
 
 ## How to test the tool to generate your proceedings
-Now that you know the expected structure of the proceedings and... you can proceed testing the tool to automatically generate the proceedings. First of all, follow the Setup procedures. You can then test...
+Now that you know the expected structure of the proceedings and you know how to edit/export the required `.yml` input files, you are ready to test the tool to automatically generate the proceedings. First of all, follow the [Setup](#setup) procedures. Then, as a training example, we made at your disposal in the examples/sigdial repository all the files you would need to correctly generate the proceedings. 
+Could you compile the sigdial proceedings? 
+
+Excellent, you are now ready to run the generation scripts on the files you have just edited/exported for your conference/workshop.
 
 ### Setup: Install python dependencies.
 
@@ -197,8 +200,7 @@ the `build` directory in the directory in which you ran the command.
 
 ## Usage
 
-The generation scripts accepts as input the path to a directory, containing a set of `.yml` files and directories.
-Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/file/yaml-arrays/)
+As said before, the generation scripts accepts as input the path to a directory, containing a set of `.yml` files and directories.
 This expected input directory structure and the CLI are detailed below.
 
 ### CLI
