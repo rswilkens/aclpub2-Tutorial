@@ -1,6 +1,6 @@
-# How to generate proceedings for ACL Conferences and Workshops in aclpub2 format
+# How to generate proceedings for \*CL Conferences and Workshops in aclpub2 format
 
-This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format. 
+This guide has been created to provide \*CL Conferences (ACL, NAACL, EMNLP, ... ) and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format. 
 
 The provided Python tool to generate the proceedings takes as input a set of files containing all information on the event (in the `.yml` format) and generates a `.tex` file containing the conference details, sponsors, prefaces, organizing and program committees, as well as the concatenation of all the watermarked accepted papers and the author index. Such `.tex` file is then compiled to generate the `pdf` file of the proceedings (to be sent to ACL Anthology).
 
@@ -42,12 +42,11 @@ In addition, for the handbook, a file `program.yml` should be created [Jump to H
 
 ## Expected output
 The generated proceedings should be sent to the ACL Anthology as a `.zip` file containing a repository named with the conference/workshop acronym. Such repository should contain:
-1. A repository named INPUT containing all the input files (`.yml`)
-2. A repository named WATERMARKED containing all the pdfs of the watermarked camera ready papers 
-3. A repository named PROCEEDINGS containing the pdf with the conference/workshop proceedings 
+1. A folder named `input` containing all the input files (i.e., the `*.yml` and `*.tex` files used to generate the proceedings)
+2. A folder named `watermarked_pdf` containing all the pdfs of the watermarked camera ready papers 
+3. A PDF file named `proceedings.pdf` containing the whole conference/workshop proceedings (i.e., the introduction and all the watermarked PDFs of the camera ready papers).
 
-
-Before submitting the final proceedings, please carefully check the generated pdf with the ACLPUBCHECK tool, a Python tool that automatically detects author formatting errors, margin violations as well as many other common formatting errors in papers that are using the LaTeX sty file associated with ACL venues. The tool and instructions to use it can be found [here](https://github.com/acl-org/aclpubcheck).
+**Important:** Before generating the final proceedings, please carefully check the input pdfs of the camera ready papers with the ACLPUBCHECK tool, a Python tool that automatically detects author formatting errors, margin violations as well as many other common formatting errors in papers that are using the LaTeX sty file associated with ACL venues. The tool and instructions to use it can be found [here](https://github.com/acl-org/aclpubcheck). We *strongly suggest* to share with the authors this tool before the sumbission of their final camera ready, in order to reduce the effort of controlling possibly hundreds of papers. 
 
 ## Manually editing yml input files
 Below you can find instructions (and examples) on how you should edit the `.yml` files with information on your conference/workshop.
