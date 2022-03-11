@@ -10,7 +10,7 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
 ## Table of Contents
 1. [Proceedings input format and structure](#Proceedings-input-format-and-structure)
 
-2. [Manually editing input yml files](#Manually-editing-input-yml-files)
+2. [Manually editing yml input files](#Manually-editing-yml-input-files)
 
 3. [How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview)
 
