@@ -3,7 +3,7 @@
 This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format.
 
 ## Before starting: Which reviewing platform is you conference/workshop using?
-- OpenReview. This guide is for you, we will explain you how to use the provided tool to generate the proceedings automatically from OpenReview.
+- OpenReview. This guide is for you, we will explain you how to use the provided tool to generate the proceedings (and the handbook) automatically from OpenReview. 
 - EasyChair. We will explain you how to generate the proceedings manually.
 - SoftConf. Please follow the [ACLPUB instructions](https://github.com/acl-org/acl-pub/blob/gh-pages/aclpub-start.md).
 
@@ -21,7 +21,19 @@ This guide has been created to provide ACL Conferences and Workshops organisers 
    [Step 3:  Dwnl Templates Tab](#step-3--dwnl-templates-tab)
 
 
-## Proceedings format and structure
+## Proceedings input format and structure
+The scripts to generate the proceedings accept as input a set of `.yml` files and directories. A YML file is a text document that contains data formatted using YAML (YAML Ain't Markup Language), a human-readable data format used for data serialization. You can open a YML file in any text editor (or source code editor).
+Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/file/yaml-arrays/)
+
+
+conference_details.yml
+sponsors.yml
+prefaces.yml
+organizing_committee.yml
+program_committee.yml
+papers.yml
+
+In addition, for the handbook, a file program.yml should be created [Jump to Handbook generation instructions](#Handbook-generation). 
 
 
 ## How to test the tool to generate your proceedings
@@ -258,3 +270,6 @@ the Jinja library. Documentation can be found [here](https://jinja.palletsprojec
 Additional configuration for Jinja can be found in the `aclpub2/templates.py` file.
 The purpose of this file are to set up the Jinja environment with LaTeX-like block delimiters so that the `proceedings.tex` file can be syntax highlighted and otherwise interacted with in a fashion that is more natural for LaTeX users.
 In addition, it is also responsible for configuring some convenience functions that allow us to create some LaTeX structures in the final output `.tex` file that are easier to write in native Python than either the Jinja base syntax, or LaTeX alone.
+
+## Handbook generation instructions
+TBC
