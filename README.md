@@ -28,15 +28,17 @@ The provided Python tool to generate the proceedings takes as input a set of fil
 The scripts to generate the proceedings accept as input a set of `.yml` files and directories. A YML file is a text document that contains data formatted using YAML (YAML Ain't Markup Language), a human-readable data format used for data serialization. You can open a YML file in any text editor (or source code editor).
 Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/file/yaml-arrays/).
 
-The following `.yml` files should be provided to the generation scripts. Files 1,2, 3 and 6 should be manually edited with information concerning your conference/workshops, while files 4, 5 and 7 can be automatically exported from OpenReview (or manually edited if you are not using OpenReview).
+The following `.yml` files should be provided to the generation scripts. Files 1, 2, 3 and 6 should be manually edited with information concerning your conference/workshops, while files 4, 5 and 7 can be automatically exported from OpenReview (or manually edited if you are not using OpenReview).
 
 1. `conference_details.yml`
-2. `sponsors.yml`
+2. `sponsors.yml` (optional)
 3. `prefaces.yml`
 4. `organizing_committee.yml`
 5. `program_committee.yml`
 6. `invited_talks.yml` (optional)
 7. `papers.yml`
+
+We strongly suggest taking a look at this [link](https://github.com/rycolab/aclpub2/tree/main/examples/sigdial), where you can find **examples** of all the above files initialized for a past conference.
 
 In addition, for the handbook, a file `program.yml` should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
 
