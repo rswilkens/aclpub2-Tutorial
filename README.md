@@ -1,6 +1,8 @@
 # How to generate proceedings for ACL Conferences and Workshops in aclpub2 format
 
-This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format. The provided Python tool to generate the proceedings takes as input a set of files containing all information on the event (in the `.yml` format) and generates a `.tex` file containing the conference details, sponsors, prefaces, organizing and program committees, as well as the concatenation of all the accepted papers in `pdf` format (watermarked) and the author index.
+This guide has been created to provide ACL Conferences and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format. 
+
+The provided Python tool to generate the proceedings takes as input a set of files containing all information on the event (in the `.yml` format) and generates a `.tex` file containing the conference details, sponsors, prefaces, organizing and program committees, as well as the concatenation of all the watermarked accepted papers and the author index. Such `.tex` file is then compiled to generate the `pdf` file of the proceedings (to be sent to ACL Anthology).
 
 
 ## Before starting: Which reviewing platform is you conference/workshop using?
@@ -48,6 +50,8 @@ Below you can find instructions (and examples) on how you should edit the `.yml`
 
 #### conference_details.yml
 This file should contain the key information about the conference, as its name, abbreviation and so on. It is used to build the cover of the proceedings, watermarks, and other items.
+
+Note that the ISBN of your conference/workshop will be provided by ACL.
 
 ```yaml
 name: Name of the Conference
