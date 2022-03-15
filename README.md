@@ -2,7 +2,7 @@
 
 This guide has been created to provide \*CL Conferences (ACL, NAACL, EMNLP, ... ) and Workshops organisers with the instructions to follow to generate proceedings in aclpub2 format. 
 
-The provided Python tool to generate the proceedings takes as input a set of files containing all information on the event (in the `.yml` format) and generates a `.tex` file containing the conference details, sponsors, prefaces, organizing and program committees, as well as the concatenation of all the watermarked accepted papers and the author index. Such `.tex` file is then compiled to generate the `pdf` file of the proceedings (to be sent to ACL Anthology).
+The provided Python tool to generate the proceedings takes as input a set of files containing all information on the event (in the `.yml` format) and generates a `.tex` file containing the conference details, sponsors, prefaces, organizing and program committees, as well as the concatenation of all the watermarked accepted papers and the author index. Such `.tex` file is then compiled to generate the `pdf` file of the proceedings (to be sent to ACL Anthology following [these](https://aclanthology.org/info/contrib/) instructions).
 
 
 ## Before starting
@@ -44,7 +44,7 @@ We strongly suggest taking a look at this [link](https://github.com/rycolab/aclp
 In addition, for the handbook, a file `program.yml` should be created [Jump to Handbook generation instructions](#Handbook-generation-instructions). 
 
 ## Expected output
-The generated proceedings should be sent to the ACL Anthology as a `.zip` file containing a repository named with the conference/workshop acronym. Such repository should contain:
+The generated proceedings should be sent to the ACL Anthology [instructions](https://aclanthology.org/info/contrib/) as a `.zip` file containing a repository named with the conference/workshop acronym. Such repository should contain:
 1. A folder named `input` containing all the input files (i.e., the `*.yml` and `*.tex` files used to generate the proceedings)
 2. A folder named `watermarked_pdf` containing all the pdfs of the watermarked camera ready papers 
 3. A PDF file named `proceedings.pdf` containing the whole conference/workshop proceedings (i.e., the introduction and all the watermarked PDFs of the camera ready papers).
