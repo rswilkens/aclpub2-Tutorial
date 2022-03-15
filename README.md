@@ -29,7 +29,7 @@ The provided Python tool to generate the proceedings takes as input a set of fil
 The scripts to generate the proceedings accept as input a set of `.yml` files and directories. A YML file is a text document that contains data formatted using YAML (YAML Ain't Markup Language), a human-readable data format used for data serialization. You can open a YML file in any text editor (or source code editor).
 Examples and usage of YAML syntax can be found [here](https://www.w3schools.io/file/yaml-arrays/).
 
-The following `.yml` files should be provided to the generation scripts. Files 1, 2, 3 and 6 should be manually edited with information concerning your conference/workshops, while files 4, 5 and 7 can be automatically exported from OpenReview (or manually edited if you are not using OpenReview).
+The following `.yml` files should be provided to the generation scripts. Files 1, 2, 3, 4 and 6 should be manually edited with information concerning your conference/workshops, while files 5 and 7 can be automatically exported from OpenReview (or manually edited if you are not using OpenReview).
 
 1. `conference_details.yml`
 2. `sponsors.yml` (optional)
@@ -90,8 +90,7 @@ Instead, they should only contain the contents between the `\begin{document}` an
 Frequently, this will simply be plaintext, with a few formulas, figures, or tables.
 
 #### organizing_committee.yml
-This file should list the members of the organizaing committee. You can edit this file manually, or export it from OpenReview [Jump to How to export yml files from OpenReview](#How-to-export-yml-files-from-OpenReview).
-
+This file should list the members of the organizaing committee. You should edit this file manually.
 ```yaml
 - role: Name of role, e.g. General Chair
   members:
