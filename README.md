@@ -164,7 +164,48 @@ Each of the listed papers must have a unique ID so that they may be referred to 
 ```
 
 ## How to export yml files from OpenReview
-TBC (Rodrigo)
+When running your workshop on OpenReview, it is possible to use their API for automatically extracting the papers.yml and program_committee.yml files. For this purpose, we provide 2 Python3 scripts for facilitating your work.
+1. or2papers.py: it creates the papers.yml file by extracting the papers marked as "accepted" as "Decision"; 
+2. or2program_committee.py: it creates the program_committee.yml file by retrieving the *Senior Area Chairs* list registered at workshop spate on OpenReview and the list of reviewers;
+Those scripts are designed to be used by the workshop's Program Chairs due to access permission required during the queries to OpenReview. To use these scripts, you will need **username** (the e-mails used for login onto OpenReview), **password** (the password associated with the user's account), and the **workshop_ID** (the OpenReview identifier linked to the workshop).
+
+**Workshop ID:** you can find out the workshop's identifier by following 1 of the two approaches below:
+1. Workshop ID is identified as "venue ID" on the setup website.
+2. Workshop ID is present at the workshop's URL. It is the ID field. For example, the ID of the ACL conference (https://openreview.net/group?id=aclweb.org/ACL/2022/Conference) is "aclweb.org/ACL/2022/Conference". Note that & is a separator in the URL. Therefore anything after it is not part of the workshop ID.
+
+### Before running
+**Requirements**
+Those scripts required Python3 and OpenReview API installed in your machine. For installing OpenReview API, please go to https://openreview-py.readthedocs.io/en/latest/how_to_setup.html
+**Updated data**
+The scripts based on OpenReview API retrieves all information directly from OpenReview. In other words, all SACs, reviewers and authors must have their OpenReview profiles updated (mainly name and affiliation).
+
+### or2papers.py
+This script will find the intersection of all blind submissions and the submissions with a decision set as accepted. Those papers' information will be stored in the paper.yml file and downloaded at the "papers" and "attachments" folders. The download includes the PDF and additional attachments provided during the submission. Note that papers are randomly sorted, and different runs of the or2papers.py will return the papers sorted differently. 
+For running or2papers.py type:
+```bash
+python or2papers.py USER PASSWORD WORKSHOP_ID
+```
+For example: 
+```bash
+python or2papers.py myuser@acl.com 123456 aclweb.org/ACL/2022/Conference
+```
+### or2program_committee.py
+This script searches all Senior_Area_Chairs and Program_Chairs under your conference and saves their information in the program_committee.yml file.
+
+For running or2papers.py type:
+```bash
+python or2program_committee.py USER PASSWORD WORKSHOP_ID
+```
+
+For example: 
+```bash
+python or2program_committee.py myuser@acl.com 123456 aclweb.org/ACL/2022/Conference
+```
+
+**Notes**
+* The workshops that accept the ARR commitment should be aware that the or2program_committee.py script only extracts data of submitted/committed papers.
+* During the script execution, you may see a message such as "ERROR: or_id not found". It means that the script could not retrieve the profile's information from OpenReview. Therefore, you must insert manually the data in the paper.yml or program_committee.yml. You can identify the problematic OpenReview ID and their papers in paper.log and program_committee.log
+
 
 ## Testing the tool to generate your proceedings
 Now that you know the expected structure of the proceedings and you know how to edit/export the required `.yml` input files, you are ready to test the tool to automatically generate the proceedings. First of all, follow the Setup procedures. 
